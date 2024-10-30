@@ -7,7 +7,7 @@ namespace Project4.Business
     public class ProductManager : IProductService
     {
         IProductDal _productDal;
-        public ProductManager(IProductDal productDal)
+        public ProductManager(IProductDal productDal)//burda dışarıdan gleen yani hangi katmandan çağırılmışsa new lenmişse
         {
             _productDal = productDal;
         }

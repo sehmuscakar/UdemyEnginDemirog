@@ -11,7 +11,7 @@ namespace Project4.DataAccess
     //IEntityde bizim veritabınımza karşılık gelen sınıfllarını tutacak
     //new -- newlenebilir olmak zorunda
     //newleme sebebimiz bizim IEntity varlığımız interface olduğu için onlarda newleme olmadığı için burda ekstra newlenebilir olsun istiyoruz generiç yapımızın 
-    public interface IEntityRepository<T> where T : class, IEntity,new() //new sonda olması lazım 
+    public interface IEntityRepository<T> where T : class, IEntity,new() //new sonda olması lazım , bizim T miz için bu kısıtlar(koşul)
     {
         List<T> GetAll();
         List<T> GetById(int id);

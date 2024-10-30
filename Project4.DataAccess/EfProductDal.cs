@@ -24,7 +24,7 @@ namespace Project4.DataAccess
 
         public void Add(Product product)
         {
-          Console.WriteLine("EF ile eklendi");
+            Console.WriteLine("EF ile eklendi");
         }
 
         public void Delete(Product entity)
